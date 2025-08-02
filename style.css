@@ -27,6 +27,7 @@ header, footer {
     background-color: var(--bg-color);
     padding: 20px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 nav {
@@ -106,4 +107,5 @@ cite {
 img {
     max-width: 100%;
     border-radius: 100;
+
 }
