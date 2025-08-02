@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Need for Speed: Most Wanted</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Need for Speed: Most Wanted</h1>
+        <p>Corridas ilegais, perseguições policiais e uma lista negra a ser superada</p>
+        <button id="mode-toggle"> Alternar Modo</button>
+    </header>
+    <nav>
+        <a href="#historia">História</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#biografia">Biografia Visual</a>
+        <a href="#tabela">Dados</a>
+        <a href="#citacao">Citação</a>
+        <a href="#referencias">Referências</a>
+    </nav>
+    <div class="container">
+        <section id="historia" class="content-section">
+            <h2>História</h2>
+            <p>
+                Em *Need for Speed: Most Wanted* (2005), você assume o papel de um corredor de rua anônimo que chega à cidade fictícia de Rockport com um objetivo: se tornar o mais procurado da cidade. No início do jogo, seu carro é sabotado por um rival, Razor, que aproveita a falha para vencer a corrida, roubar seu veículo e subir no ranking da “Blacklist” — os 15 corredores mais procurados da cidade.
+            </p>
+            <p>
+                Seu objetivo é reconquistar seu prestígio, vencer corridas, provocar a polícia e derrotar cada membro da Blacklist até finalmente enfrentar Razor em uma revanche épica para recuperar seu carro e expor a corrupção dentro da força policial. Tudo isso enquanto o jogo mistura ação intensa com perseguições alucinantes e uma trilha sonora inesquecível.
+            </p>
+        </section>
+        <section id="curiosidades" class="content-section">
+            <h2>Curiosidades</h2>
+            <ul class="curiosidades">
+                <li>O carro original do protagonista é um BMW M3 GTR, ícone da franquia.</li>
+                <li>Foi o primeiro jogo da série a integrar perseguições policiais intensas com IA adaptativa.</li>
+                <li>A cidade de Rockport foi inspirada em diferentes cidades reais dos EUA.</li>
+                <li>O ator Josie Maran interpreta a personagem Mia Townsend no jogo.</li>
+                <li>A trilha sonora inclui artistas como Disturbed, Celldweller e The Prodigy.</li>
+            </ul>
+        </section>
+        <section id="biografia" class="content-section">
+            <h2>Biografia Visual</h2>
+            <figure>
+                <img src="Imagens/mostwnated.jpg" alt="Imagem do jogo Need for Speed Most Wanted">
+                <figcaption>BMW M3 GTR o carro símbolo de Most Wanted em ação nas ruas de Rockport.</figcaption>
+            </figure>
+        </section>
+        <section id="tabela" class="content-section">
+            <h2>Dados Relevantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2005</td>
+                        <td>Lançamento original do jogo</td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>Alcança mais de 16 milhões de cópias vendidas</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Lançamento do reboot com o mesmo nome</td>
+                    </tr>
+                    <tr>
+                        <td>2020+</td>
+                        <td>Reconhecimento como clássico cult dos games</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="citacao" class="content-section">
+            <h2>Citação Importante</h2>
+            <blockquote>
+                "O que importa não é vencer... é ser o mais procurado."
+                <cite>Need for Speed: Most Wanted</cite>
+            </blockquote>
+        </section>
+        <section id="referencias" class="content-section">
+            <h2>Referências</h2>
+            <ol>
+                <li><a href="Imagens/mostwnated.jpg">Wikipedia - Most Wanted (2005)</a></li>
+                <li><a href="https://www.ea.com/games/need-for-speed">Site oficial da EA</a></li>
+            </ol>
+        </section>
+    </div>
+    <footer>
+        <p>Última atualização em: 01/08/2025</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('mode-toggle');
+        const body = document.body;
+
+        function setMode(mode) {
+            if (mode === 'light') {
+                body.classList.add('light-mode');
+                body.classList.remove('dark-mode');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            }
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            if (body.classList.contains('light-mode')) {
+                setMode('dark');
+            } else {
+                setMode('light');
+            }
+        });
+
+        setMode('dark');
+    </script>
+</body>
+</html>
