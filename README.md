@@ -1,0 +1,1 @@
+# Avalia-o-5---2-DSIS---2025---REPLICA-O-DA-WIKIPEDIA--Luiz-Henrique-de-Matos-Muller-N-24
